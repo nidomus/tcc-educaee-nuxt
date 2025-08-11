@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
   },
+
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
@@ -14,6 +15,11 @@ export default defineNuxtConfig({
     //...
   ],
   vite: {
+    server: {
+      allowedHosts: [
+        'nuxt.herbertdev.com.br'
+      ]
+    },
     vue: {
       template: {
         transformAssetUrls,

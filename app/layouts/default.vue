@@ -1,7 +1,7 @@
 <template>
     
     <v-app>
-        <v-container class="fill-height align-center align-content-center ga-4" max-width="90dvw" width="75dvw" >
+        <v-container class="fill-height align-center align-content-center ga-4" max-width="90dvw" width="70dvw" >
             
             <header class="d-flex justify-center align-center w-100 bg-yellow-accent-2 rounded-xl px-5">
                 <v-spacer></v-spacer>
@@ -11,9 +11,7 @@
             </header>
 
             <v-main class="h-75">
-                <v-card class="h-100" rounded="xl" >
-                    <slot />
-                </v-card>
+                <slot />
             </v-main>
 
         </v-container>

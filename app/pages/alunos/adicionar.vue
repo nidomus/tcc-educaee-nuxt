@@ -1,11 +1,12 @@
 <template>
 
-    <v-card class="h-100 bg-purple-accent-3" rounded="xl" border="xl" density="comfortable" >
-        <v-form class="h-100 pt-6 px-6" @submit.prevent>
+    <v-card class="h-100 bg-purple-accent-3" rounded="xl" border="xl" density="comfortable"  >
+        <v-form class="h-100 py-5 px-5" @submit.prevent max-height="80%">
             <v-container max-height="50%">
+                
                 <v-row>
-                    <v-col lg="3" md="12">
-                        <v-avatar size="10rem" border="xl" density="compact" color="black">
+                    <v-col lg="2" md="12"  class="d-flex flex-column justify-center align-center ga-4">
+                        <v-avatar size="8rem" border="xl" density="compact" color="black">
                             <v-img
                                 alt="Foto de Perfil"
                                 src="~/assets/images/aluna.png"
@@ -14,8 +15,9 @@
                             >
                             </v-img>
                         </v-avatar>
+                        <v-btn prepend-icon="mdi-camera" color="black">Alterar foto</v-btn>
                     </v-col>
-                    <v-col lg="9" md="10" sm="12">
+                    <v-col lg="10" md="10" sm="12">
                         <v-row>
                             <v-col lg="10" sm="12">
                                 <v-text-field variant="solo" aria-required="true" label="Nome completo do aluno" bg-color="white">
@@ -61,11 +63,11 @@
                 </v-row>
                 <v-row>
                     <v-col cols="12">
-                        <v-textarea bg-color="white"   variant="solo" type="tel" label="Diagnóstico e apresentação de especificidades">
+                        <v-textarea bg-color="white" auto-grow no-resize variant="solo" density="default" label="Diagnóstico e apresentação de especificidades">
                         </v-textarea>
                     </v-col>
                 </v-row>
-                <v-row>
+                <!-- <v-row>
                     <v-col cols="12">
                         <v-select 
                             bg-color="white"
@@ -77,7 +79,7 @@
                             :items="['Habilidade 1', 'Habilidade 2', 'Habilidade 3', 'Habilidade 4', 'Habilidade 5', 'Habilidade 6', 'Habilidade 7', 'Habilidade 8', 'Habilidade 9', 'Habilidade 10']"
                          ></v-select>
                     </v-col>
-                </v-row>
+                </v-row> -->
                 <v-row>
                     <v-spacer></v-spacer>
                     <v-col cols="12" class="d-flex justify-end ga-4" >
@@ -90,6 +92,8 @@
                     </v-col>
                 </v-row>
             </v-container>
+
+            <v-card-actions></v-card-actions>
         </v-form>
             
     </v-card>
@@ -102,5 +106,11 @@
 </script>
 
 <style lang="scss" scoped>
+
+
+.v-form {
+    overflow-y: auto;
+    height: 100%;
+}
 
 </style>

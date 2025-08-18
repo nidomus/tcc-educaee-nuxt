@@ -5,7 +5,7 @@
             
             <header class="d-flex justify-center align-center w-100 bg-yellow-accent-2 rounded-xl px-5">
                 <v-spacer></v-spacer>
-                <h1>Header</h1>
+                <h1 class="text-h2 font-weight-bold">ADICIONAR ALUNO</h1>
                 <v-spacer></v-spacer>
                 <v-btn icon="mdi-close" text="Fechar" aria-label="Fechar" class="bg-red-accent-2 mr-5" />
             </header>

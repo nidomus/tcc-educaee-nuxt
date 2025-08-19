@@ -1,0 +1,20 @@
+[
+    {
+        "nome": "Maria Roberta",
+        "idade": 12,
+        "ano": "7º ano",
+        "foto": "aluna"
+    },
+    {
+        "nome": "João Paulo",
+        "idade": 10,
+        "ano": "5º ano",
+        "foto": "aluno"
+    },
+    {
+        "nome": "Ana Julia",
+        "idade": 13,
+        "ano": "8º ano",
+        "foto": "aluna"
+    }
+]
